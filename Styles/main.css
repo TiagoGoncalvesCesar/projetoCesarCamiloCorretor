@@ -1,0 +1,30 @@
+/* Menu de navegação*/
+.main-nav {
+  margin: 10px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff; /*#0044cc*/
+  font-weight: bold;
+  /*background-color: #0044cc; /*#fff*/
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: white; /*#0044cc*/
+  color: #054271;/*#0044cc; /*white*/
+}
+
+/* Estilos para alinhar o botão 'Contato' */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre os botões */
+}
+

@@ -1,0 +1,91 @@
+/* Botão "Voltar à Página Principal" */
+.voltar-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #054271;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .voltar-btn a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .voltar-btn:hover {
+    background-color: #054271;/*#002a80;*/
+  }
+
+  .botao-principal {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #054271;/*#007bff;*/
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.botao-principal:hover {
+  background-color: #054271;/*#0056b3;*/
+}
+
+.botao-contato {
+  position: relative;
+}
+
+/* Subbotões 'WhatsApp' e 'Email'*/
+.sub-botoes {
+  display: none;
+  position: absolute;
+  top: 100%; /* Posiciona os subbotões abaixo do botão 'Contato' */
+  left: 0;
+  background-color: #054271;/*#007bff;*/
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sub-botao {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #054271;/*#007bff;*/
+  font-size: 0.9rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sub-botao:hover {
+  background-color: #054271;/*#0056b3*/;
+}
+
+/* Exibir os subbotões ao passar o mouse sobre o botão 'Contato' */
+.botao-contato:hover .sub-botoes {
+  display: block;
+}
+
+.botao-principal {
+    width: 100%; /* Faz os botões ocuparem a largura da tela*/
+    max-width: 250px; /* Define um tamanho máximo para botões */
+  }
+
+  /* Configurações do botão instagram*/
+.botao-instagram {
+    display: inline-flex; /* Garante que o botão fique alinhado ao texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    align-items: center;
+    text-decoration: none; /* Remove sublinhado */
+    margin-left: 10px; /* Ajusta o espaço do botão à esquerda */
+  }
+
+  .botao-instagram:hover .img-instagram {
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse*/
+}
+  

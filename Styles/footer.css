@@ -1,0 +1,14 @@
+/* Footer */
+footer {
+    display: flex; /* Torna o footer um container flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    background-color: #054271;
+    color: white;
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    margin-top: 40px; /* Distância entre o footer e o conteúdo acima */
+  }
+
+  footer p {
+    margin: 0; /* Remove margens extras do texto */
+  }

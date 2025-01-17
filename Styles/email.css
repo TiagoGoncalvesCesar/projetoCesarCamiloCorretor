@@ -1,104 +1,114 @@
 /* Reset básico */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #7fffd4;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+  background-color: #fdfcf8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* Estilo do cabeçalho */
 header {
-    background-color: #0a0a0a;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+  background-color: #054271;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 /* Seção do formulário */
 section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 form {
-    background-color: #f4f4f4;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
 }
 
 label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 textarea {
-    height: 150px;
-    resize: none;
+  height: 150px;
+  resize: none;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Remover borda e garantir que o botão não tenha linha em volta */
-.enviar-btn, .voltar-btn {
-    background-color: #0044cc;
-    color: white;
-    border: none; /* Remover borda */
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-block;
+.enviar-btn,
+.voltar-btn {
+  background-color: #054271; /*#0044cc;*/
+  color: white;
+  border: none; /* Remover borda */
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
 /* Garantir que o link dentro do botão também não tenha borda */
-.enviar-btn a, .voltar-btn a {
-    border: none;  /* Remover qualquer borda do link */
-    text-decoration: none;
-    color: inherit;  /* Herda a cor do botão */
+.enviar-btn a,
+.voltar-btn a {
+  border: none; /* Remover qualquer borda do link */
+  text-decoration: none;
+  color: inherit; /* Herda a cor do botão */
 }
 
 /* Estilo de hover para os botões */
-.enviar-btn:hover, .voltar-btn:hover {
-    background-color: #003366;
+.enviar-btn:hover,
+.voltar-btn:hover {
+  background-color: #054271;
+  color: white;
+  /*font-weight: bold;
+  border: none;*/
+  /*border: 1px solid #054271; /* Adicionar uma borda azul para destaque */
 }
 
 /* Estilo do rodapé */
 footer {
-    text-align: center;
-    background-color: #0a0a0a;
-    color: white;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
+  text-align: center;
+  background-color: #054271;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
 }
