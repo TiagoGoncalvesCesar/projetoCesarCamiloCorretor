@@ -53,29 +53,6 @@ body {
     transform: scale(1.1); /* Zoom ao passar o mouse */
   }
   
-  
-  /*.galeria-embarcacoes {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-  
-  .galeria-embarcacoes img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .galeria-embarcacoes img:hover {
-    transform: scale(1.1);
-  }*/
-  
-  
   h3 {
     margin: 10px 0;
   }
