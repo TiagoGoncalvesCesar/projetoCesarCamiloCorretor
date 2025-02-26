@@ -1,69 +1,83 @@
 /* Botão "Voltar à Página Principal" */
 .voltar-btn {
-    display: block;
-    margin: 20px auto;
-    background-color: #054271;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .voltar-btn a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .voltar-btn:hover {
-    background-color: #054271;/*#002a80;*/
-  }
+  display: block;
+  margin: 20px auto;
+  background-color: #054271;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
 
-  .botao-principal {
+.voltar-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.voltar-btn:hover {
+  background-color: #054271; /*#002a80;*/
+}
+
+.botao-principal {
   padding: 10px 20px;
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
-  background-color: #054271;/*#007bff;*/
+  background-color: #054271; /*#007bff;*/
   border-radius: 5px;
   text-align: center;
   transition: background-color 0.3s;
 }
 
 .botao-principal:hover {
-  background-color: #054271;/*#0056b3;*/
+  background-color: #054271; /*#0056b3;*/
 }
 
+/* Estilo para o botão "Contato" */
 .botao-contato {
+  flex: 1; /* Faz o botão "Contato" ocupar o mesmo espaço que os outros */
   position: relative;
+  text-align: center; /* Centraliza o texto */
+  margin: 0 5px; /* Espaço lateral uniforme */
 }
 
-/* Subbotões 'WhatsApp' e 'Email'*/
+/* Garante que o link dentro do botão "Contato" tenha o mesmo estilo dos outros */
+.botao-contato .botao-principal {
+  width: 100%; /* O link ocupa toda a largura do botão "Contato" */
+  display: block; /* Faz o link se comportar como um bloco */
+  padding: 10px 0; /* Altura uniforme */
+}
+
+/* Subbotões 'WhatsApp' e 'Email' centralizados */
 .sub-botoes {
-  display: none;
+  display: none; /* Mantém escondido por padrão */
   position: absolute;
-  top: 100%; /* Posiciona os subbotões abaixo do botão 'Contato' */
-  left: 0;
-  background-color: #054271;/*#007bff;*/
+  top: 100%; /* Posiciona os subbotões logo abaixo do botão "Contato" */
+  left: 50%; /* Centraliza o subbotões horizontalmente */
+  transform: translateX(-50%); /* Ajusta o ponto de referência para o centro */
+  background-color: #054271; /* Cor de fundo */
   border-radius: 5px;
   overflow: hidden;
+  z-index: 10; /* Garante que fiquem acima de outros elementos */
 }
 
+/* Subbotões individuais */
 .sub-botao {
   display: block;
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  background-color: #054271;/*#007bff;*/
+  background-color: #054271;
   font-size: 0.9rem;
   text-align: center;
   white-space: nowrap;
 }
 
 .sub-botao:hover {
-  background-color: #054271;/*#0056b3*/;
+  background-color: #003b5d;
 }
 
 /* Exibir os subbotões ao passar o mouse sobre o botão 'Contato' */
@@ -72,20 +86,116 @@
 }
 
 .botao-principal {
-    width: 100%; /* Faz os botões ocuparem a largura da tela*/
-    max-width: 250px; /* Define um tamanho máximo para botões */
-  }
+  width: 100%; /* Faz os botões ocuparem a largura da tela*/
+  max-width: 22rem; /* Define um tamanho máximo para botões */
+}
 
-  /* Configurações do botão instagram*/
+/* Configurações do botão instagram*/
 .botao-instagram {
-    display: inline-flex; /* Garante que o botão fique alinhado ao texto */
-    vertical-align: middle; /* Alinha verticalmente com o texto */
-    align-items: center;
-    text-decoration: none; /* Remove sublinhado */
-    margin-left: 10px; /* Ajusta o espaço do botão à esquerda */
-  }
+  display: inline-flex; /* Garante que o botão fique alinhado ao texto */
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  align-items: center;
+  text-decoration: none; /* Remove sublinhado */
+  margin-left: 10px; /* Ajusta o espaço do botão à esquerda */
+}
 
-  .botao-instagram:hover .img-instagram {
+.botao-instagram:hover .img-instagram {
   transform: scale(1.1); /* Aumenta a imagem ao passar o mouse*/
 }
-  
+
+/*--------------------------------------------------*/
+
+/* Barra de botões ocupando toda a largura da tela */
+.barra-botoes {
+  display: flex;
+  justify-content: space-evenly; /* Distribui os botões igualmente */
+  align-items: center;
+  background-color: #1565c0; /* Cor de fundo da barra */
+  padding: 10px 0;
+  width: 100%; /* Ocupa toda a largura da tela */
+  border-radius: 0; /* Remove bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  margin: 0; /* Remove margens externas */
+}
+
+/* Estilos gerais para a barra de botões */
+.barra-botoes {
+  display: flex;
+  justify-content: space-evenly; /* Distribui os botões uniformemente */
+  align-items: center;
+  background-color: #1565c0;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  flex-wrap: nowrap; /* Impede que os botões quebrem para a próxima linha */
+}
+
+/* Estilos para os botões principais */
+.barra-botoes .botao-principal {
+  flex: 1 1 auto; /* Permite que os botões cresçam e se ajustem */
+  text-align: center;
+  padding: 10px 5px; /* Padding ajustável */
+  font-size: 1rem; /* Tamanho fixo da fonte para telas maiores */
+  min-width: 120px; /* Largura mínima para cada botão */
+  color: #fff;
+  background-color: #054271;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin: 0 5px; /* Espaçamento entre os botões */
+}
+
+/* Estilos para o botão de contato e sub-botões */
+.botao-contato {
+  position: relative;
+  right: 3.85px;
+}
+
+.sub-botoes {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #054271;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sub-botao {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #054271;
+  font-size: 0.9rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sub-botao:hover {
+  background-color: #003b5d;
+}
+
+.botao-contato:hover .sub-botoes {
+  display: block;
+}
+
+/* Media query para telas menores (celulares) */
+@media (max-width: 600px) {
+  .barra-botoes {
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+  }
+
+  .barra-botoes .botao-principal {
+    flex: 1 1 45%; /* Define uma largura flexível para os botões */
+    font-size: 0.9rem; /* Tamanho da fonte menor em telas pequenas */
+    padding: 8px 3px; /* Padding menor para telas pequenas */
+    min-width: 100px; /* Largura mínima reduzida */
+    margin: 5px; /* Espaçamento entre os botões */
+  }
+}

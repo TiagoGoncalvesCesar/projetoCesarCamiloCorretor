@@ -1,0 +1,87 @@
+/* styles/embarcacoes.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .embarcacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .embarcacao {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .galeria-embarcacoes {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as miniaturas */
+    justify-content: flex-start;
+    overflow-x: auto; /* Adiciona a barra de rolagem horizontal */
+    padding: 10px;
+    white-space: nowrap; /* Impede que as miniaturas quebrem para a próxima linha */
+  }
+  
+  .galeria-embarcacoes img {
+    width: 90px; /* Largura fixa das miniaturas */
+    height: 90px; /* Altura fixa das miniaturas */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção */
+    border-radius: 4px; /* Arredondamento leve */
+    border: 1px solid #ddd; /* Borda leve */
+    cursor: pointer; /* Indica interatividade */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+  }
+  
+  .galeria-embarcacoes img:hover {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
+  }
+  
+  
+  /*.galeria-embarcacoes {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .galeria-embarcacoes img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria-embarcacoes img:hover {
+    transform: scale(1.1);
+  }*/
+  
+  
+  h3 {
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 5px 10px;
+    font-size: 0.9rem;
+  }
+  

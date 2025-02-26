@@ -26,6 +26,7 @@ body {
   display: block; /* Remove o espaçamento abaixo da imagem */
 }
 /*-------------------------------------------------------------------------------------------*/
+
 /* Container para a animação */
 #angra {
   overflow: hidden;
@@ -58,13 +59,13 @@ body {
 
 /* Adicione mais imagens aqui, ajustando os delays se necessário */
 
-/* Estilo para responsividade em telas menores */
+/* Estilo para responsividade em telas menores 
 @media (max-width: 600px) {
   .main-nav {
-    flex-direction: column; /* Coloca os botões em coluna */
-    align-items: center; /* Centraliza na coluna */
+    flex-direction: column; /* Coloca os botões em coluna 
+    align-items: center; /* Centraliza na coluna *
   }
-}
+}*/
 
 /* Animação */
 @keyframes rotacionar {
@@ -85,8 +86,10 @@ body {
   transition: transform 0.3s ease; /* Animação ao passar o mouse*/ 
 }
 
-.logo {
-  max-width: 300px;
-  height: auto;
-  margin: 0 auto 10px;
-}
+
+
+  
+   
+
+  
+
