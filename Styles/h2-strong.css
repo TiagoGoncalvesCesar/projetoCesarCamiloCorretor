@@ -1,0 +1,26 @@
+/*h2 strong {
+    display: block;
+    text-align: center;
+    max-width: 800px; /* Define uma largura máxima para evitar linhas muito longas 
+    margin: 0 auto; /* Centraliza horizontalmente 
+    line-height: 1.6; /* Ajusta o espaçamento entre as linhas 
+    font-size: 28px; /* Tamanho da fonte 
+  }*/
+
+@font-face {
+  font-family: "Lucien";
+  src: url("../assets/fonts/Bodonio.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font {
+  display: block;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Lucien", sans-serif; /* Aplica a fonte Lucien */
+}

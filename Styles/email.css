@@ -113,4 +113,15 @@ footer {
   margin-top: auto;
 }
 
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+    gap: 10px; /* Ajuste conforme necessário */
+  }
 
+  .enviar-btn,
+  .voltar-btn {
+    width: 100%; /* Ocupa toda a largura para melhor alinhamento */
+    text-align: center;
+  }
+}

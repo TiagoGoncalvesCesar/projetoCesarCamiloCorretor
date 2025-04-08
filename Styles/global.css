@@ -59,14 +59,6 @@ body {
 
 /* Adicione mais imagens aqui, ajustando os delays se necessário */
 
-/* Estilo para responsividade em telas menores 
-@media (max-width: 600px) {
-  .main-nav {
-    flex-direction: column; /* Coloca os botões em coluna 
-    align-items: center; /* Centraliza na coluna *
-  }
-}*/
-
 /* Animação */
 @keyframes rotacionar {
   0%,
