@@ -58,3 +58,29 @@ function mostrarImagemEmbarcacao() {
 document
   .querySelector(".fechar-embarcacao")
   .addEventListener("click", fecharLightboxEmbarcacao);
+
+  
+          /* Define a data mínima como hoje
+const inputData = document.getElementById('data-aluguel');
+const hoje = new Date().toISOString().split('T')[0];
+inputData.setAttribute('min', hoje);*/
+
+/*window.onload = function () {
+  const inputData = document.getElementById('data-aluguel');
+  if (inputData) {
+    const hoje = new Date().toISOString().split('T')[0];
+    inputData.setAttribute('min', hoje);
+  }
+};*/
+
+window.onload = function () {
+  const inputsData = document.querySelectorAll('.data-aluguel');
+  const hoje = new Date().toISOString().split('T')[0];
+
+  inputsData.forEach(input => {
+    input.setAttribute('min', hoje);
+  });
+};
+
+
+        

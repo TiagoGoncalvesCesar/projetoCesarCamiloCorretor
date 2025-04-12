@@ -59,4 +59,13 @@ function mostrarImagem() {
 // Event listener para fechar o lightbox ao clicar no botão de fechar
 document.querySelector(".fechar").addEventListener("click", fecharLightbox);
 
+window.onload = function () {
+  const inputsData = document.querySelectorAll('.data-aluguel');
+  const hoje = new Date().toISOString().split('T')[0];
+
+  inputsData.forEach(input => {
+    input.setAttribute('min', hoje);
+  });
+};
+
 
