@@ -7,22 +7,16 @@
     <link rel="stylesheet" href="Styles/index.css" />
   </head>
   <body>
-   
-    <div id="video-intro">
-      <img
-        src="assets/icons/CESAR CAMILO LOGO VERTICAL.png"
-        alt="Logomarca Cesar Luiz"
-        class="logo"
-      />
-      <h1 class="slogan">Realizando sonhos, com segurança e confiança.</h1>
-      <button id="play-button">▶ Bem-vindo ao site Cesar Camilo</button>
-      <video id="intro-video" controls>
-        <source src="assets/videos/video-de-apresentação.mp4" type="video/mp4" />
-        Seu navegador não suporta vídeo.
-      </video>
-      <button id="skip-button">⏭ Pular Vídeo</button>
+     
+    <div id="video-overlay" class="overlay">
+      <div class="video-container">
+        <video id="intro-video" controls>
+          <source src="assets/videos/video-de-apresentação.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+        <button id="skip-button">Pular</button>
+      </div>
     </div>
-    
     
     <header></header>
     <nav class="main-nav">

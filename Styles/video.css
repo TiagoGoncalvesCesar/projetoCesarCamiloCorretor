@@ -1,96 +1,44 @@
 
 
-/* Tela de introdução (vídeo + logo + botão) */
-#video-intro {
+.overlay {
   position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  text-align: center;
-  padding: 2rem;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-/* Logomarca */
-#video-intro .logo {
-  width: 200px;
-  height: auto;
-  max-width: 80%;
-  margin-bottom: 1rem;
-}
-
-/* Slogan */
-.slogan {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px 4px black;
-  margin-bottom: 1.5rem;
-}
-
-/* Botão "Bem-vindo ao site" */
-#play-button {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background-color: #ffffffcc;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-bottom: 2rem;
-}
-
-/* Vídeo */
-#intro-video {
-  display: none;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 800px;
-  max-height: 60vh;
-  object-fit: contain;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  /*background-color: rgba(200, 200, 200, 0.5);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.video-container {
+  position: relative;
+  max-width: 90%;
+  width: 1150px;
+}
+
+#intro-video {
+  width: 100%;
+  height: auto;
   border-radius: 12px;
 }
 
-/* Botão "Pular vídeo" */
 #skip-button {
   position: absolute;
-  left: 20px;
-  bottom: 20px;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  top: 10px;
+  right: 10px;
   background-color: #ffffffcc;
   border: none;
-  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: bold;
   cursor: pointer;
-  display: none;
-  z-index: 10001;
+  border-radius: 4px;
+  z-index: 10000;
 }
 
-/* Responsividade extra */
-@media (max-width: 768px) {
-  .slogan {
-    font-size: 1.2rem;
-  }
-
-  #play-button {
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-  }
-
-  #skip-button {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-
-  #video-intro .logo {
-    width: 150px;
-  }
-}
 
 
   
