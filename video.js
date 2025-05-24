@@ -1,29 +1,48 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("video-overlay");
   const video = document.getElementById("intro-video");
   const skipBtn = document.getElementById("skip-button");
 
-  if (!sessionStorage.getItem("videoWatched")) {
-    document.body.style.overflow = "hidden";
-    overlay.style.display = "flex";
-  } else {
-    overlay.style.display = "none";
-  }
-
-  function finishIntro() {
+  const finishIntro = () => {
     overlay.style.display = "none";
     document.body.style.overflow = "auto";
     sessionStorage.setItem("videoWatched", "true");
-  }
 
-  video.addEventListener("ended", finishIntro);
-  skipBtn.addEventListener("click", () => {
-    video.pause();
-    finishIntro();
-  });
+    // Se estiver em tela cheia, sair
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    }
+  };
+
+  if (!sessionStorage.getItem("videoWatched")) {
+    document.body.style.overflow = "hidden";
+    overlay.style.display = "flex";
+
+    video.addEventListener("ended", finishIntro);
+
+    skipBtn.addEventListener("click", () => {
+      video.pause();
+      finishIntro();
+    });
+
+    // Se o usuário sair da tela cheia manualmente, corrigir overflow
+    document.addEventListener("fullscreenchange", () => {
+      if (!document.fullscreenElement && overlay.style.display === "none") {
+        document.body.style.overflow = "auto";
+      }
+    });
+  } else {
+    overlay.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
 });
+
+
+
+
+
+
 
 
 

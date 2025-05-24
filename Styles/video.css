@@ -17,7 +17,7 @@
 .video-container {
   position: relative;
   max-width: 90%;
-  width: 1150px;
+  width: 1050px;
 }
 
 #intro-video {
@@ -38,6 +38,14 @@
   border-radius: 4px;
   z-index: 10000;
 }
+
+/*------------------------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 
 
