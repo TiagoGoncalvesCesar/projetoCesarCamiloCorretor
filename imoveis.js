@@ -1,7 +1,7 @@
 // Definir um objeto contendo as imagens separadas por imóveis
 const imagens = {
   imovel01: [
-    "assets/imovel-01/img01.jpg",
+    "assets/imovel-venda/imovel-01/img01.jpg",
     "assets/imovel-01/img02.jpg",
     "assets/imovel-01/img03.jpg",
     "assets/imovel-01/img04.jpg",
